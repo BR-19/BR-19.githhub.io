@@ -1,25 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-.about{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
-.about div {
-	flex: 16.875em;
-	margin: 20px;
-	align-self: center;
-}
-
-.about p{
-	text-align: justify;
-}
-
-.about img {
-	flex: 0 1 auto;
-	margin-left: 5%;
-}
 
 *{
   margin: 0;
@@ -99,24 +79,3 @@ body{
   border-top-right-radius: 5px;
 }
 
-.wrapper .main_content{
-  width: 100%;
-  margin-left: 200px;
-}
-
-.wrapper .main_content .header{
-  padding: 20px;
-  background: #fff;
-  color: #717171;
-  border-bottom: 4px solid #e0e4e8;
-}
-
-.wrapper .main_content .info{
-  margin: 40px;
-  color: #717171;
-  line-height: 25px;
-}
-
-.wrapper .main_content .info p{
-  text-align: justify;
-}
