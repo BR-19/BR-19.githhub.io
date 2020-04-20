@@ -109,16 +109,18 @@ flex: 16.875em;
 	align-self: center;
 }
 .wrapper .contents h2{
+	color: #006699;
 margin: 10px 10px;
 }
 .wrapper .contents p{
 		text-align: justify;
 		line-height: 20px;
 		padding: 10px 10px;
+		font-size: 20px;
 }
 
 .wrapper .contents ul{
-	
+	font-size: 20px;	
 	list-style-type: disc;
 	padding: 5px 20px;
 	margin: 0px 1px;
