@@ -25,7 +25,7 @@ main {
 	background: linear-gradient(to bottom, #c9cc9f 0%,#f0f3bd 20%,#f0f3bd 80%,#c9cc9f 100%);
 }
 
-header, footer {
+header{
 	background: linear-gradient(to bottom, #03374c 0%,#044a66 25%,#05668d 100%);
 }
 
