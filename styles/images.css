@@ -3,8 +3,4 @@
 	height: 24.125em
 }
 
-/* img is of SVG type so set custom height and width */
-.social img {
-	height: 4em;
-	padding: 5px;
-}
+
