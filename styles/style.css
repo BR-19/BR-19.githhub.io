@@ -16,68 +16,100 @@ html * {
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
 }
-
-.wrapper{
-  display: flex;
-  position: relative;
+@media screen and (min-resolution:100dpi) {
+  html{ font-size: 16px; }
 }
 
-.wrapper .sidebar{
+@media screen and (min-resolution:200dpi) {
+  html{ font-size: 32px; }
+}
+
+@media screen and (min-resolution:300dpi) {
+  html{ font-size: 48px; }
+}
+
+@media screen and (min-resolution:400dpi) {
+  html{ font-size: 64px; }
+}
+
+@media screen and (min-resolution:600dpi) {
+  html{ font-size: 96px; }
+}
+
+@media screen and (min-resolution:800dpi) {
+  html{ font-size: 128px; }
+}
+
+
+
+
+
+
+
+
+ .sidebar{
+  margin: 0;
+  padding: 0;
   width: 200px;
-  height: 100%;
   background: #4b4276;
-  padding: 30px 0px;
   position: fixed;
+  height: 100%;
+  
 }
 
-.wrapper .sidebar h2{
+ .sidebar h2{
   color: #fff;
+  padding:10px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.wrapper .sidebar ul li{
+ .sidebar ul li{
   padding: 15px;
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
 }    
 
-.wrapper .sidebar ul li a{
+.sidebar ul li a{
+
   color: #bdb8d7;
-  display: block;
+  display: flex;
+            
 }
 
-.wrapper .sidebar ul li a .fas{
+ .sidebar ul li a .fas{
   width: 25px;
 }
 
-.wrapper .sidebar ul li:hover{
+ .sidebar ul li:hover{
   background-color: #594f8d;
 }
     
-.wrapper .sidebar ul li:hover a{
+ .sidebar ul li:hover a{
   color: #fff;
 }
  
-.wrapper .sidebar .social_media{
+ .sidebar .social_media{
   position: relative;
-  bottom: -230px;
+  bottom: -250px;
   left: 50%;
+
   transform: translateX(-50%);
   display: flex;
 }
-.wrapper .sidebar .PER{
+ .sidebar .PER{
   color:#fff;
   margin-left: 5px;
-    position: relative;
-  bottom: -220px;
+  position: relative;
+  bottom: -230px;
+
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
-.wrapper .sidebar .social_media a{
+ .sidebar .social_media a{
   display: block;
   width: 40px;
   background: #594f8d;
@@ -92,13 +124,13 @@ html * {
 
 
 
-.wrapper .contents{
-	width: 100%;
+ .contents{
+	
 	margin-left: 200px;
 
 }
 
-.wrapper .contents .header{
+ .contents .header{
   padding: 20px 10px;
   background: #006699;
   color: #fff;
@@ -107,14 +139,14 @@ html * {
   border-bottom: 1px solid #e0e4e8;
 
 }
-.wrapper .contents .About{
+ .contents .About{
 margin: 20px 10px;
 display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 }
 
-.wrapper .contents .About img{
+ .contents .About img{
 flex: 0 1 auto;
   margin-left: 5%;
 }
@@ -122,44 +154,91 @@ flex: 0 1 auto;
 
 
 
-.wrapper .contents .About div{
+ .contents .About div{
 flex: 16.875em;
 	align-self: center;
 }
 
-.wrapper .contents .p1{
+ .contents .p1{
 margin: 20px 2px;
 display: flex;
   flex-flow: row wrap;
 }
-.wrapper .contents h1{
+ .contents h1{
 margin: 5px 10px;
 
 display: flex;
   flex-flow: row wrap;
 }
 
-.wrapper .contents h2{
+ .contents h2{
 	color: #006699;
 margin: 10px 10px;
 }
-.wrapper .contents p{
+ .contents p{
 		text-align: justify;
 		line-height: 25px;
 		padding: 10px 10px;
 		font-size: 20px;
 }
 
-.wrapper .contents ul{
+ .contents ul{
 	font-size: 20px;	
 	list-style-type: disc;
 	padding: 5px 20px;
 	margin: 0px 1px;
 	line-height: 25px;
 }
-.wrapper .contents .About div{
+ .contents .About div{
 	margin-bottom: 20px;
 }
-.wrapper .contents .p1 div{
+ .contents .p1 div{
   margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  .contents {margin-left: 0;}
+  .sidebar .social_media{
+      position: relative;
+bottom:15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  }
+   .sidebar .social_media a{
+  display: block;
+  width: 20px;
+  background: #594f8d;
+  height: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sidebar .PER{
+  color:#bdb8d7;
+  margin-left: 5px;
+  position: relative;
+  line-height: 55px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
