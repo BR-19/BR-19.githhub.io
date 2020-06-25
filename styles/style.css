@@ -93,6 +93,14 @@ html * {
   border-top-right-radius: 5px;
 }
 
+#anomaly{
+  width: 700px;
+  height: 400px;
+  display:block;
+  margin: 10px auto;
+
+}
+
 
 
  .contents{
